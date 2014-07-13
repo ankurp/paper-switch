@@ -18,5 +18,5 @@ Then add the following markup
 To turn the switch on by default use the `on=true` attribute
 
 ```html
-<paper-switch></paper-switch>
+<paper-switch on=true></paper-switch>
 ```
