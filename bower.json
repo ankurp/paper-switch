@@ -1,0 +1,20 @@
+{
+  "name": "paper-switch",
+  "version": "0.1",
+  "authors": [
+    "Ankur Patel <ankur.patel@ymail.com>"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.4",
+    "core-elements": "Polymer/core-elements#~0.3.4"
+  },
+  "description": "Switch component for Polymer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
