@@ -20,3 +20,9 @@ To turn the switch on by default use the `on=true` attribute
 ```html
 <paper-switch on=true></paper-switch>
 ```
+
+### Running demo
+
+First go into the `paper-switch` directory do a `bower install` to import all the required components.
+
+Then run `python -m SimpleHTTPServer` and go to `http://localhost:8000`
