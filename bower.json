@@ -4,6 +4,7 @@
   "authors": [
     "Ankur Patel <ankur.patel@ymail.com>"
   ],
+  "keywords": ["web-components", "polymer"],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.3.4"
   },
