@@ -64,6 +64,8 @@
     top: 2px;
     left: 2px;
     z-index: 2;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
