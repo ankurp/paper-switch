@@ -23,7 +23,9 @@ To turn the switch on by default use the `on=true` attribute
 
 ### Running demo
 
-First go into the `paper-switch` directory do a `bower install` to import all the required components.
-
-Then run `python -m SimpleHTTPServer` and go to `http://localhost:8000`
-
+```bash
+npm install
+bower install
+npm run demo
+```
+Then go to `http://localhost:8080/components/paper-switch/index.html`

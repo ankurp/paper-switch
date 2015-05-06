@@ -1,12 +1,13 @@
 {
   "name": "paper-switch",
-  "version": "0.2",
+  "version": "0.3",
   "authors": [
-    "Ankur Patel <ankur.patel@ymail.com>"
+    "Ankur Patel <ankur.patel@ymail.com>",
+    "Antono Vasiljev <antono.vasiljev@gmail.com>"
   ],
-  "keywords": ["web-components", "polymer"],
+  "keywords": ["web-components", "polymer", "UI"],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.3.4"
+    "polymer": "Polymer/polymer#~0.5.4"
   },
   "description": "Switch component for Polymer",
   "license": "MIT",

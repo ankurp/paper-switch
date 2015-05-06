@@ -1,0 +1,17 @@
+{
+  "name": "paper-switch",
+  "version": "0.3.0",
+  "description": "paper-switch component",
+  "main": "index.html",
+  "scripts": {
+    "demo": "./node_modules/polyserve/bin/polyserve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antono/paper-switch.git"
+  },
+  "devDependencies": {
+    "polyserve": "^0.3.0"
+  },
+  "license": "MIT"
+}
