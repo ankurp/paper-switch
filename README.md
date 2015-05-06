@@ -12,7 +12,7 @@ Import component using `<link rel="import" href="./path/to/paper-switch.html">`
 Then add the following markup
 
 ```html
-<paper-switch></paper-switch>
+<paper-switch value="{{ result }}"></paper-switch>
 ```
 
 To turn the switch on by default use the `on=true` attribute
