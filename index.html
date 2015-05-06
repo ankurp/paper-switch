@@ -24,16 +24,30 @@
     <div>
       <h2>Markup</h2>
       <code>
-        &lt;paper-switch on=true&gt;&lt;/paper-switch&gt;
+        &lt;paper-switch value="{{ binding }}"&gt;&lt;/paper-switch&gt;
       </code>
     </div>
-    <div>
-      <h3>Switch On</h3>
-      <paper-switch on=true></paper-switch>
-    </div>
-    <div>
-      <h3>Switch Off</h3>
-      <paper-switch></paper-switch>
-    </div>
+
+    <template is="auto-binding" id="root">
+      <div>
+        <h3>Switch On</h3>
+        <paper-switch value="{{ first }}"></paper-switch>
+        <p> Result: {{ first }} </p>
+      </div>
+      <div>
+        <h3>Switch Off</h3>
+        <paper-switch value="{{ last }}"></paper-switch>
+        <p> Result: {{ last }} </p>
+      </div>
+    </template>
+
+    <script>
+      document.addEventListener('polymer-ready', function () {
+        var rootScope = document.getElementById('root');
+        rootScope.first = true;
+        rootScope.last = false;
+      });
+    </script>
+
   </body>
 </html>

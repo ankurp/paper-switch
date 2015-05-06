@@ -1,11 +1,11 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<polymer-element name="paper-switch" attributes="on" noscript>
+<polymer-element name="paper-switch" attributes="value" noscript>
   <template>
     <link href="paper-switch.css" rel="stylesheet">
 
     <label class="label-switch">
-      <input type="checkbox" checked={{on}} />
+      <input type="checkbox" checked="{{value}}" />
       <div class="checkbox"></div>
     </label>
   </template>
