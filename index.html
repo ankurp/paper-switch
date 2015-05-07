@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="bower_components/platform/platform.js"></script>
-    <link rel="import" href="elements/paper-switch.html">
-    <link href="main.css" rel="stylesheet">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="paper-switch.html">
+    <style>
+      body {
+        text-align: center;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        background: #f9f9f9;
+      }
+
+      h1, h2, h3 {
+          font-weight: 100;
+      }
+
+      paper-switch {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Switch Demo</h1>
+    <h1>paper-switch Demo</h1>
     <div>
       <h2>Markup</h2>
       <code>
-        &lt;paper-switch on=true&gt;&lt;/paper-switch&gt;
+        &lt;paper-switch value="{{ binding }}"&gt;&lt;/paper-switch&gt;
       </code>
     </div>
-    <div>
-      <h3>Switch On</h3>
-      <paper-switch on=true></paper-switch>
-    </div>
-    <div>
-      <h3>Switch Off</h3>
-      <paper-switch></paper-switch>
-    </div>
+
+    <template is="auto-binding" id="root">
+      <div>
+        <h3>Switch On</h3>
+        <paper-switch value="{{ first }}"></paper-switch>
+        <p> value: {{ first }} </p>
+      </div>
+      <div>
+        <h3>Switch Off</h3>
+        <paper-switch value="{{ last }}"></paper-switch>
+        <p> value: {{ last }} </p>
+      </div>
+    </template>
+
+    <script>
+      document.addEventListener('polymer-ready', function () {
+        var rootScope = document.getElementById('root');
+        rootScope.first = true;
+        rootScope.last = false;
+      });
+    </script>
+
   </body>
 </html>
